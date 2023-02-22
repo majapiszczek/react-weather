@@ -1,0 +1,64 @@
+:root {
+  --main-color: rgb(233, 154, 167);
+}
+
+.Weather {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid var(--main-color);
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.Weather h2 {
+  font-size: 32px;
+}
+
+.Weather h4 {
+  font-size: 14px;
+}
+
+.Weather p {
+  font-size: 16px;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.Weather span {
+  line-height: 100px;
+  font-size: 64px;
+  vertical-align: middle;
+}
+
+.Weather small {
+  vertical-align: 70%;
+}
+
+.Weather button {
+  background-color: var(--main-color);
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.Weather form {
+  width: 300px;
+  font-size: 14px;
+}
+
+.Weather input {
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+.Weather .button {
+  background-color: var(--main-color);
+}
+
+.Weather .forecast {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.Weather .forecast img {
+  width: 70px;
+}
