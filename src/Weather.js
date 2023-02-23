@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Weather.css";
 import axios from "axios";
+import CurrentDate from "./CurrentDate";
 
 export default function Weather(props) {
   let [loaded, setLoaded] = useState(false);
@@ -13,7 +14,7 @@ export default function Weather(props) {
           <div className="row top mb-5">
             <div className="col">
               <h2>{weatherData.city}</h2>
-              <p>Wednesday, 10:00 AM</p>
+              <CurrentDate />
               <p className="text-capitalize">{weatherData.description}</p>
             </div>
             <div className="col">
