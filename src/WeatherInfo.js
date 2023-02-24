@@ -1,6 +1,7 @@
 import React from "react";
 import CurrentDate from "./CurrentDate";
 import TemperatureConversion from "./TemperatureConversion";
+import Forecast from "./Forecast";
 
 export default function WeatherInfo(props) {
   return (
@@ -25,55 +26,7 @@ export default function WeatherInfo(props) {
           </ul>
         </div>
       </div>
-      <div className="forecast text-center">
-        <div className="col">
-          <h4>Wed</h4>
-          <img src={props.data.icon_url} alt={props.data.icon} />
-          <p>
-            <strong>6° </strong>2°
-          </p>
-        </div>
-        <div className="col">
-          <h4>Thu</h4>
-          <img
-            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
-            alt=""
-          />
-          <p>
-            <strong>6° </strong>2°
-          </p>
-        </div>
-        <div className="col">
-          <h4>Fri</h4>
-          <img
-            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
-            alt=""
-          />
-          <p>
-            <strong>6° </strong>2°
-          </p>
-        </div>
-        <div className="col">
-          <h4>Sat</h4>
-          <img
-            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
-            alt=""
-          />
-          <p>
-            <strong>6° </strong>2°
-          </p>
-        </div>
-        <div className="col">
-          <h4>Sun</h4>
-          <img
-            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
-            alt=""
-          />
-          <p>
-            <strong>6° </strong>2°
-          </p>
-        </div>
-      </div>
+      <Forecast />
     </div>
   );
 }

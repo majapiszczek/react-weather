@@ -1,0 +1,8 @@
+.Forecast span {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.Forecast .forecast-temperature-min {
+  opacity: 0.6;
+}

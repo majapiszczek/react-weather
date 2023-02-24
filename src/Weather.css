@@ -54,12 +54,3 @@
 .Weather .button {
   background-color: var(--main-color);
 }
-
-.Weather .forecast {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.Weather .forecast img {
-  width: 70px;
-}
