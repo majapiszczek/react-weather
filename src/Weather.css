@@ -41,12 +41,6 @@
   vertical-align: top;
 }
 
-.Weather button {
-  background-color: var(--main-color);
-  border: 1px solid black;
-  border-radius: 8px;
-}
-
 .Weather form {
   max-width: 100%;
   font-size: 14px;
@@ -55,6 +49,16 @@
 .Weather input {
   border-radius: 6px;
   border: 1px solid black;
+}
+
+.Weather .searchbar {
+  width: 80%;
+  padding: 6px;
+}
+
+.Weather .button {
+  width: 16%;
+  padding: 6px;
 }
 
 .Weather .button {
