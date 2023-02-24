@@ -32,7 +32,8 @@
 
 .Weather small {
   font-size: 18px;
-  vertical-align: 30%;
+  vertical-align: 32%;
+  margin-left: 5px;
   color: var(--main-color);
 }
 
