@@ -9,7 +9,7 @@ export default function Weather(props) {
   let [weatherData, setWeatherData] = useState({});
 
   function search() {
-    const apiKey = "8a74ad5eo45tde558fe05997d33ec4b6";
+    let apiKey = "8a74ad5eo45tde558fe05997d33ec4b6";
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(getResponse);
   }
@@ -26,6 +26,7 @@ export default function Weather(props) {
   function getResponse(response) {
     setLoaded(true);
     setWeatherData({
+      coords: response.data.coordinates,
       city: response.data.city,
       temperature: Math.round(response.data.temperature.current),
       wind: Math.round(response.data.wind.speed),
