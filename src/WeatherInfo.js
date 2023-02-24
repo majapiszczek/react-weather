@@ -1,6 +1,5 @@
 import React from "react";
 import CurrentDate from "./CurrentDate";
-import TemperatureConversion from "./TemperatureConversion";
 import Forecast from "./Forecast";
 
 export default function WeatherInfo(props) {
@@ -16,7 +15,10 @@ export default function WeatherInfo(props) {
       <div className="row mb-5">
         <div className="col">
           <img src={props.data.icon_url} alt={props.data.icon} />
-          <TemperatureConversion celsius={props.data.temperature} />
+          <span>
+            {props.data.temperature}
+            <small>°C</small>
+          </span>
         </div>
         <div className="col">
           <ul className="pt-3">
