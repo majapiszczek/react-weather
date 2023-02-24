@@ -14,7 +14,11 @@ export default function WeatherInfo(props) {
       </div>
       <div className="row mb-5">
         <div className="col">
-          <img src={props.data.icon_url} alt={props.data.icon} />
+          <img
+            src={props.data.icon_url}
+            alt={props.data.icon}
+            className="current-temp-icon"
+          />
           <span>
             {props.data.temperature}
             <small>°C</small>

@@ -37,6 +37,10 @@
   color: var(--main-color);
 }
 
+.Weather .current-temp-icon {
+  vertical-align: top;
+}
+
 .Weather button {
   background-color: var(--main-color);
   border: 1px solid black;
