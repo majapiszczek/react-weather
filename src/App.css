@@ -1,7 +1,11 @@
 .App {
-  max-width: 700px;
-  margin: 20px auto;
+  width: 700px;
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../public/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .App footer {
@@ -11,6 +15,5 @@
 }
 
 .App a {
-  text-decoration: none;
-  color: var(--main-color);
+  color: black;
 }
